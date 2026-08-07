@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | LIRA</title>
+  <meta name="description" content="Privacy Policy for LIRA. Learn what data stays on your device, when network is used, and how to delete your information.">
+  <link rel="canonical" href="https://zeffou.github.io/lira-web/privacy.html">
+  <meta name="theme-color" content="#fdf8f5">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="logo" href="index.html">
+        <span class="logo__mark">●</span>
+        <span class="logo__text">LIRA</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="sources.html">Sources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <article class="panel prose">
+      <h1 class="page-title">Privacy Policy</h1>
+      <p class="meta">Last updated: August 7, 2026</p>
+      <p class="page-lead">LIRA is built to keep your listening library on your device. This policy explains what information is handled, when the app uses the network, and how you can remove data.</p>
+
+      <h2>Who we are</h2>
+      <p>LIRA is published by Zeffou / Tumba Mulamba. For privacy questions, contact <a href="mailto:tumba.miller@gmail.com">tumba.miller@gmail.com</a>.</p>
+
+      <h2>Summary</h2>
+      <ul>
+        <li>No account is required to use the core app.</li>
+        <li>Imported books, bookmarks, progress, and optional profile details are stored on your device.</li>
+        <li>We do not sell personal data.</li>
+        <li>Network is used when you browse Discovery content or when you choose to download an on-device speech transcription model.</li>
+      </ul>
+
+      <h2>Data stored on your device</h2>
+      <p>Depending on how you use LIRA, the app may store:</p>
+      <ul>
+        <li><strong>Library media</strong> — audiobooks and EPUB files you import, plus cover art extracted from those files.</li>
+        <li><strong>Listening state</strong> — resume position, playback preferences, bookmarks, and sleep-timer settings.</li>
+        <li><strong>Optional profile</strong> — display name, email, and profile photo if you add them in Settings. These stay on the device and are not required to use the app.</li>
+        <li><strong>Transcripts</strong> — text generated on device when you start transcription for a book, plus any transcript files you import.</li>
+        <li><strong>Model cache</strong> — if you start transcription, LIRA may download a speech-to-text model for on-device use and keep it in app storage.</li>
+      </ul>
+
+      <h2>Network use</h2>
+      <p>LIRA may connect to the internet to:</p>
+      <ul>
+        <li>Load Discovery catalogs and cover/sample media from public sources such as LibriVox, Open Library, and the Internet Archive.</li>
+        <li>Download a Whisper speech model (via WhisperKit / Hugging Face infrastructure) the first time you start transcription.</li>
+      </ul>
+      <p>Imported personal library files are not uploaded to our servers. LIRA does not require a LIRA cloud account.</p>
+
+      <h2>Permissions</h2>
+      <ul>
+        <li><strong>Photos</strong> — only if you choose a profile photo through the system photo picker.</li>
+        <li><strong>Notifications</strong> — only if you enable sleep-timer warnings.</li>
+        <li><strong>Background audio</strong> — so playback can continue with the screen locked.</li>
+      </ul>
+
+      <h2>Analytics, advertising, and tracking</h2>
+      <p>LIRA does not include third-party advertising SDKs and does not use App Tracking Transparency tracking. We do not run a separate analytics product inside the app today.</p>
+
+      <h2>Children</h2>
+      <p>LIRA is a general-audience reading and listening app. It is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+
+      <h2>Data retention and deletion</h2>
+      <p>Because core data lives on your device, you control deletion:</p>
+      <ul>
+        <li>Delete individual books from your library to remove their media and related local state.</li>
+        <li>Edit or clear profile name, email, and photo in Settings.</li>
+        <li>Clear generated transcripts from the player when available.</li>
+        <li>Uninstall LIRA to remove remaining app data from the device.</li>
+      </ul>
+      <p>If you contact us by email, we keep that correspondence only as long as needed to respond and handle your request.</p>
+
+      <h2>Third parties</h2>
+      <p>When Discovery or model download features are used, third-party services process network requests under their own terms and privacy practices. See <a href="sources.html">Sources &amp; Third Parties</a>.</p>
+
+      <h2>Changes</h2>
+      <p>We may update this policy as LIRA evolves. The “Last updated” date at the top will change when we do.</p>
+
+      <h2>Contact</h2>
+      <p>Email <a href="mailto:tumba.miller@gmail.com">tumba.miller@gmail.com</a> with privacy questions or deletion requests.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>© <span id="y"></span> LIRA</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="sources.html">Sources</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
