@@ -6,20 +6,25 @@
   <title>Privacy Policy | LIRA</title>
   <meta name="description" content="Privacy Policy for LIRA. Learn what data stays on your device, when network is used, and how to delete your information.">
   <link rel="canonical" href="https://zeffou.github.io/lira-web/privacy.html">
-  <meta name="theme-color" content="#fdf8f5">
+  <meta name="theme-color" content="#050505">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
+  <svg class="dot-pattern" aria-hidden="true">
+    <defs>
+      <pattern id="lira-dots" width="16" height="16" patternUnits="userSpaceOnUse" x="0" y="0">
+        <circle cx="1" cy="1" r="1" fill="currentColor" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#lira-dots)" />
+  </svg>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="site-header__inner">
-      <a class="logo" href="index.html">
-        <span class="logo__mark">●</span>
-        <span class="logo__text">LIRA</span>
-      </a>
+    <div class="shell site-header__inner">
+      <a class="logo" href="index.html"><span class="logo__mark"></span>LIRA</a>
       <nav class="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="privacy.html" aria-current="page">Privacy</a>
@@ -30,8 +35,9 @@
     </div>
   </header>
 
-  <main id="main" class="wrap">
+  <main id="main" class="shell page">
     <article class="panel prose">
+      <p class="label">Legal / Privacy</p>
       <h1 class="page-title">Privacy Policy</h1>
       <p class="meta">Last updated: August 7, 2026</p>
       <p class="page-lead">LIRA is built to keep your listening library on your device. This policy explains what information is handled, when the app uses the network, and how you can remove data.</p>
@@ -52,18 +58,13 @@
       <ul>
         <li><strong>Library media</strong> — audiobooks and EPUB files you import, plus cover art extracted from those files.</li>
         <li><strong>Listening state</strong> — resume position, playback preferences, bookmarks, and sleep-timer settings.</li>
-        <li><strong>Optional profile</strong> — display name, email, and profile photo if you add them in Settings. These stay on the device and are not required to use the app.</li>
-        <li><strong>Transcripts</strong> — text generated on device when you start transcription for a book, plus any transcript files you import.</li>
-        <li><strong>Model cache</strong> — if you start transcription, LIRA may download a speech-to-text model for on-device use and keep it in app storage.</li>
+        <li><strong>Optional profile</strong> — display name, email, and profile photo if you add them in Settings.</li>
+        <li><strong>Transcripts</strong> — text generated on device when you start transcription for a book.</li>
+        <li><strong>Model cache</strong> — if you start transcription, LIRA may download a speech-to-text model for on-device use.</li>
       </ul>
 
       <h2>Network use</h2>
-      <p>LIRA may connect to the internet to:</p>
-      <ul>
-        <li>Load Discovery catalogs and cover/sample media from public sources such as LibriVox, Open Library, and the Internet Archive.</li>
-        <li>Download a Whisper speech model (via WhisperKit / Hugging Face infrastructure) the first time you start transcription.</li>
-      </ul>
-      <p>Imported personal library files are not uploaded to our servers. LIRA does not require a LIRA cloud account.</p>
+      <p>LIRA may connect to the internet to load Discovery catalogs from LibriVox, Open Library, and the Internet Archive, and to download a Whisper speech model the first time you start transcription. Imported personal library files are not uploaded to our servers.</p>
 
       <h2>Permissions</h2>
       <ul>
@@ -73,34 +74,29 @@
       </ul>
 
       <h2>Analytics, advertising, and tracking</h2>
-      <p>LIRA does not include third-party advertising SDKs and does not use App Tracking Transparency tracking. We do not run a separate analytics product inside the app today.</p>
+      <p>LIRA does not include third-party advertising SDKs and does not use App Tracking Transparency tracking.</p>
 
       <h2>Children</h2>
-      <p>LIRA is a general-audience reading and listening app. It is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+      <p>LIRA is a general-audience reading and listening app. It is not directed at children under 13.</p>
 
       <h2>Data retention and deletion</h2>
-      <p>Because core data lives on your device, you control deletion:</p>
       <ul>
-        <li>Delete individual books from your library to remove their media and related local state.</li>
+        <li>Delete individual books from your library.</li>
         <li>Edit or clear profile name, email, and photo in Settings.</li>
         <li>Clear generated transcripts from the player when available.</li>
         <li>Uninstall LIRA to remove remaining app data from the device.</li>
       </ul>
-      <p>If you contact us by email, we keep that correspondence only as long as needed to respond and handle your request.</p>
 
       <h2>Third parties</h2>
-      <p>When Discovery or model download features are used, third-party services process network requests under their own terms and privacy practices. See <a href="sources.html">Sources &amp; Third Parties</a>.</p>
-
-      <h2>Changes</h2>
-      <p>We may update this policy as LIRA evolves. The “Last updated” date at the top will change when we do.</p>
+      <p>See <a href="sources.html">Sources &amp; Third Parties</a>.</p>
 
       <h2>Contact</h2>
-      <p>Email <a href="mailto:tumba.miller@gmail.com">tumba.miller@gmail.com</a> with privacy questions or deletion requests.</p>
+      <p>Email <a href="mailto:tumba.miller@gmail.com">tumba.miller@gmail.com</a>.</p>
     </article>
   </main>
 
   <footer class="site-footer">
-    <div class="site-footer__inner">
+    <div class="shell site-footer__bottom" style="border-top:0;padding-top:0">
       <p>© <span id="y"></span> LIRA</p>
       <div class="footer-links">
         <a href="privacy.html">Privacy</a>

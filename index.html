@@ -6,68 +6,225 @@
   <title>LIRA — Audiobook & EPUB Player</title>
   <meta name="description" content="LIRA is a calm audiobook and ebook player for books you already own. Import MP3, M4B, and EPUB files. Listen offline with sleep timer, bookmarks, and on-device transcripts.">
   <link rel="canonical" href="https://zeffou.github.io/lira-web/">
-  <meta name="theme-color" content="#fdf8f5">
+  <meta name="theme-color" content="#050505">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
+  <svg class="dot-pattern" aria-hidden="true">
+    <defs>
+      <pattern id="lira-dots" width="16" height="16" patternUnits="userSpaceOnUse" x="0" y="0">
+        <circle cx="1" cy="1" r="1" fill="currentColor" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#lira-dots)" />
+  </svg>
+
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="site-header__inner">
-      <a class="logo" href="index.html">
-        <span class="logo__mark">●</span>
-        <span class="logo__text">LIRA</span>
-      </a>
+    <div class="shell site-header__inner">
+      <a class="logo" href="index.html"><span class="logo__mark"></span>LIRA</a>
       <nav class="site-nav" aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
+        <a href="#features">Features</a>
+        <a href="#how">System</a>
         <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
         <a href="support.html">Support</a>
-        <a href="sources.html">Sources</a>
       </nav>
+      <a class="btn btn--fill header-cta" href="support.html">Get LIRA</a>
     </div>
   </header>
 
-  <main id="main" class="wrap wrap--wide">
-    <section class="hero">
-      <p class="hero__eyebrow">Audiobook &amp; EPUB player</p>
-      <h1>Your books. On your device.</h1>
-      <p>Import the audiobooks and EPUBs you already own. Resume where you left off, speed up listening, set a sleep timer, and optionally generate on-device read-along transcripts.</p>
-      <div class="contact">
-        <a class="btn btn--primary" href="support.html">Get support</a>
-        <a class="btn btn--ghost" href="privacy.html">Privacy Policy</a>
+  <main id="main">
+    <section class="shell hero">
+      <div>
+        <p class="label">01 / Signal</p>
+        <h1 class="display">Your books.<br><span class="mark">On device.</span></h1>
+        <p class="hero__lead">Import the audiobooks and EPUBs you already own. Resume where you left off, speed up listening, and follow along with optional on-device transcripts — no subscription storefront required.</p>
+        <div class="hero__meta">
+          <span>MP3 / M4B / EPUB</span>
+          <span>Offline library</span>
+          <span>On-device transcripts</span>
+        </div>
+        <div class="hero__actions">
+          <a class="btn btn--fill" href="support.html">View product</a>
+          <a class="btn btn--ghost" href="privacy.html">Privacy policy</a>
+        </div>
+      </div>
+
+      <div class="phone-stage" aria-hidden="true">
+        <div class="phone phone--back">
+          <img src="assets/library.png" alt="">
+        </div>
+        <div class="phone phone--front">
+          <img src="assets/discover.png" alt="">
+        </div>
       </div>
     </section>
 
-    <section class="card-grid" aria-label="Features">
-      <article class="card">
-        <h2>Listen offline</h2>
-        <p>MP3, M4A, M4B, and AAC files stay in your library. No subscription storefront required.</p>
-      </article>
-      <article class="card">
-        <h2>Read EPUBs</h2>
-        <p>A calm reader with themes, fonts, bookmarks, and text-to-speech when you want audio.</p>
-      </article>
-      <article class="card">
-        <h2>Read along</h2>
-        <p>Optional on-device transcription so you can follow the text while you listen.</p>
-      </article>
+    <section class="section" id="features">
+      <div class="shell">
+        <div class="section__head">
+          <div>
+            <p class="label">02 / Experiments</p>
+            <h2 class="display">Selected systems</h2>
+          </div>
+          <p>Studies across listening, reading, and local-first media control. Built for calm sessions — not noisy catalogs.</p>
+        </div>
+
+        <div class="feature-tabs" role="tablist" aria-label="Feature systems">
+          <button class="feature-item is-active" type="button" role="tab" aria-selected="true" id="tab-library" data-panel="panel-library">
+            <span class="feature-item__meta">
+              <span class="kicker">NO. 01</span>
+              <span class="kicker kicker--dim">Library</span>
+            </span>
+            <h3>Local shelves</h3>
+            <hr class="feature-item__rule" />
+            <p>Import files from Files and keep progress, bookmarks, and covers on device. No account required to start.</p>
+          </button>
+
+          <button class="feature-item" type="button" role="tab" aria-selected="false" id="tab-playback" data-panel="panel-playback">
+            <span class="feature-item__meta">
+              <span class="kicker">NO. 02</span>
+              <span class="kicker kicker--dim">Playback</span>
+            </span>
+            <h3>Quiet controls</h3>
+            <hr class="feature-item__rule" />
+            <p>Speed, skip, sleep timer, and lock-screen transport while the cover stays front and center.</p>
+          </button>
+
+          <button class="feature-item" type="button" role="tab" aria-selected="false" id="tab-reader" data-panel="panel-reader">
+            <span class="feature-item__meta">
+              <span class="kicker">NO. 03</span>
+              <span class="kicker kicker--dim">Reader</span>
+            </span>
+            <h3>EPUB + TTS</h3>
+            <hr class="feature-item__rule" />
+            <p>Day and night themes, font controls, and text-to-speech when you want the page spoken aloud.</p>
+          </button>
+
+          <button class="feature-item" type="button" role="tab" aria-selected="false" id="tab-transcripts" data-panel="panel-transcripts">
+            <span class="feature-item__meta">
+              <span class="kicker">NO. 04</span>
+              <span class="kicker kicker--dim">Transcripts</span>
+            </span>
+            <h3>Read along</h3>
+            <hr class="feature-item__rule" />
+            <p>Optional on-device transcription so you can follow the words while an audiobook plays.</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="shell">
+        <div class="section__head">
+          <div>
+            <p class="label">03 / Interface</p>
+            <h2 class="display">How it works</h2>
+          </div>
+          <p>Three precise steps from empty shelves to a full night of listening.</p>
+        </div>
+
+        <div class="signal-grid" role="list">
+          <article class="signal-card is-active" role="listitem" tabindex="0">
+            <span class="signal-card__meta">
+              <span>NO. 01</span>
+              <span>Import</span>
+            </span>
+            <h3>Import / discover</h3>
+            <hr class="signal-card__rule" />
+            <p>Add your own files, or browse public-domain titles from LibriVox and Open Library.</p>
+          </article>
+
+          <article class="signal-card" role="listitem" tabindex="0">
+            <span class="signal-card__meta">
+              <span>NO. 02</span>
+              <span>Playback</span>
+            </span>
+            <h3>Listen / read</h3>
+            <hr class="signal-card__rule" />
+            <p>Use the player for audiobooks or the EPUB reader with themes, bookmarks, and spoken text.</p>
+          </article>
+
+          <article class="signal-card" role="listitem" tabindex="0">
+            <span class="signal-card__meta">
+              <span>NO. 03</span>
+              <span>Align</span>
+            </span>
+            <h3>Follow along</h3>
+            <hr class="signal-card__rule" />
+            <p>Generate on-device transcripts when you want the page under the voice.</p>
+          </article>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="site-footer__inner">
-      <p>© <span id="y"></span> LIRA</p>
-      <div class="footer-links">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="support.html">Support</a>
-        <a href="sources.html">Sources</a>
+    <div class="shell">
+      <p class="label">05 / Colophon</p>
+      <h2 class="display" style="font-size:clamp(3rem,8vw,5rem)">Credits</h2>
+      <div class="colophon-grid">
+        <div>
+          <h3>Product</h3>
+          <p>LIRA Reader<br>Local audiobook + EPUB</p>
+        </div>
+        <div>
+          <h3>Typography</h3>
+          <p>Bebas Neue<br>IBM Plex Sans<br>IBM Plex Mono</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p><a href="mailto:tumba.miller@gmail.com">Email</a><br><a href="support.html">Support</a></p>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <p><a href="privacy.html">Privacy</a><br><a href="terms.html">Terms</a><br><a href="sources.html">Sources</a></p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© <span id="y"></span> LIRA. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="support.html">Support</a>
+        </div>
       </div>
     </div>
   </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    document.querySelectorAll(".feature-tabs").forEach((list) => {
+      const tabs = [...list.querySelectorAll('[role="tab"]')];
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((t) => {
+            t.classList.toggle("is-active", t === tab);
+            t.setAttribute("aria-selected", t === tab ? "true" : "false");
+          });
+        });
+      });
+    });
+
+    document.querySelectorAll(".signal-grid").forEach((grid) => {
+      const cards = [...grid.querySelectorAll(".signal-card")];
+      const activate = (card) => {
+        cards.forEach((c) => c.classList.toggle("is-active", c === card));
+      };
+      cards.forEach((card) => {
+        card.addEventListener("click", () => activate(card));
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            activate(card);
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>

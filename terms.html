@@ -6,20 +6,25 @@
   <title>Terms of Use | LIRA</title>
   <meta name="description" content="Terms of Use for the LIRA audiobook and EPUB player.">
   <link rel="canonical" href="https://zeffou.github.io/lira-web/terms.html">
-  <meta name="theme-color" content="#fdf8f5">
+  <meta name="theme-color" content="#050505">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
+  <svg class="dot-pattern" aria-hidden="true">
+    <defs>
+      <pattern id="lira-dots" width="16" height="16" patternUnits="userSpaceOnUse" x="0" y="0">
+        <circle cx="1" cy="1" r="1" fill="currentColor" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#lira-dots)" />
+  </svg>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="site-header__inner">
-      <a class="logo" href="index.html">
-        <span class="logo__mark">●</span>
-        <span class="logo__text">LIRA</span>
-      </a>
+    <div class="shell site-header__inner">
+      <a class="logo" href="index.html"><span class="logo__mark"></span>LIRA</a>
       <nav class="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="privacy.html">Privacy</a>
@@ -30,8 +35,9 @@
     </div>
   </header>
 
-  <main id="main" class="wrap">
+  <main id="main" class="shell page">
     <article class="panel prose">
+      <p class="label">Legal / Terms</p>
       <h1 class="page-title">Terms of Use</h1>
       <p class="meta">Last updated: August 7, 2026</p>
       <p class="page-lead">These Terms govern your use of the LIRA iOS app and this website. By using LIRA, you agree to them.</p>
@@ -58,16 +64,13 @@
       <h2>Privacy</h2>
       <p>How information is handled is described in the <a href="privacy.html">Privacy Policy</a>.</p>
 
-      <h2>Changes</h2>
-      <p>We may update these Terms. Continued use of LIRA after an update means you accept the revised Terms.</p>
-
       <h2>Contact</h2>
-      <p>Questions about these Terms: <a href="mailto:tumba.miller@gmail.com">tumba.miller@gmail.com</a>.</p>
+      <p>Questions: <a href="mailto:tumba.miller@gmail.com">tumba.miller@gmail.com</a>.</p>
     </article>
   </main>
 
   <footer class="site-footer">
-    <div class="site-footer__inner">
+    <div class="shell site-footer__bottom" style="border-top:0;padding-top:0">
       <p>© <span id="y"></span> LIRA</p>
       <div class="footer-links">
         <a href="privacy.html">Privacy</a>
