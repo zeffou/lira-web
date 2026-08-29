@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" fill="none" role="img" aria-labelledby="t">
+  <title id="t">Books, headphones, and a sleep-timer moon</title>
+  <circle cx="260" cy="260" r="250" fill="#F4EBE3"/>
+  <circle cx="400" cy="118" r="54" fill="#F5C518"/>
+  <circle cx="418" cy="112" r="40" fill="#F4EBE3"/>
+  <rect x="118" y="168" width="70" height="176" rx="12" fill="#1A1A1A" transform="rotate(-9 153 256)"/>
+  <rect x="138" y="188" width="12" height="124" rx="3" fill="#FDF8F5" transform="rotate(-9 144 250)"/>
+  <rect x="176" y="142" width="84" height="210" rx="14" fill="#D96A61"/>
+  <rect x="196" y="168" width="14" height="154" rx="3" fill="#F2C7C3"/>
+  <rect x="276" y="178" width="70" height="174" rx="12" fill="#F5C518" transform="rotate(8 311 265)"/>
+  <rect x="294" y="198" width="12" height="122" rx="3" fill="#FFF6C8" transform="rotate(8 300 259)"/>
+  <path d="M150 128c20-46 70-70 118-62" stroke="#1A1A1A" stroke-width="14" stroke-linecap="round"/>
+  <rect x="124" y="122" width="36" height="56" rx="18" fill="#1A1A1A"/>
+  <g stroke="#D96A61" stroke-width="5" stroke-linecap="round" opacity=".9">
+    <path d="M372 340v-18M386 348v-34M400 344v-26M414 350v-38M428 342v-22"/>
+  </g>
+</svg>

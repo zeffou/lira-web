@@ -3,117 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LIRA — Audiobook & EPUB Player</title>
-  <meta name="description" content="LIRA is a calm audiobook and ebook player for books you already own. Import MP3, M4B, and EPUB files. Listen offline with sleep timer, bookmarks, and on-device transcripts.">
+  <title>LIRA — Audiobook &amp; EPUB Player</title>
+  <meta name="description" content="LIRA is a calm audiobook and ebook player for books you already own. Optional Lira Pro, Sign in with Apple, and on-device listening.">
   <link rel="canonical" href="https://zeffou.github.io/lira-web/">
-  <meta name="theme-color" content="#050505">
+  <meta name="theme-color" content="#fdf8f5">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-  <svg class="dot-pattern" aria-hidden="true">
-    <defs>
-      <pattern id="lira-dots" width="16" height="16" patternUnits="userSpaceOnUse" x="0" y="0">
-        <circle cx="1" cy="1" r="1" fill="currentColor" />
-      </pattern>
-    </defs>
-    <rect width="100%" height="100%" fill="url(#lira-dots)" />
-  </svg>
-
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="shell site-header__inner">
+    <div class="site-header__inner">
       <a class="logo" href="index.html"><span class="logo__mark"></span>LIRA</a>
       <nav class="site-nav" aria-label="Primary">
-        <a href="#features">Features</a>
         <a href="#how">How it works</a>
+        <a href="#pro">Lira Pro</a>
         <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
         <a href="support.html">Support</a>
       </nav>
-      <a class="btn btn--fill header-cta" href="support.html">Get LIRA</a>
+      <a class="btn btn--fill header-cta" href="#pro">Lira Pro</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <a href="#how">How it works</a>
+      <a href="#pro">Lira Pro</a>
+      <a href="#account">Sign in with Apple</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="support.html">Support</a>
+      <a class="btn btn--fill" href="#pro">View Lira Pro</a>
+    </nav>
   </header>
 
   <main id="main">
     <section class="shell hero">
       <div>
         <p class="label">Listen · Read · Relax</p>
-        <h1 class="display">Your books.<br><span class="mark">On device.</span></h1>
-        <p class="hero__lead">Import the audiobooks and EPUBs you already own. Resume where you left off, speed up listening, and follow along with optional on-device transcripts — no subscription storefront required.</p>
+        <h1 class="display">What will you <span class="mark">listen</span> today?</h1>
+        <p class="hero__lead">Import the audiobooks and EPUBs you already own. Resume where you left off, follow along with on-device transcripts, and keep your library on your iPhone — with optional Lira Pro and Sign in with Apple.</p>
         <div class="hero__meta">
-          <span>MP3 / M4B / EPUB</span>
-          <span>Offline library</span>
-          <span>On-device transcripts</span>
+          <span class="chip">MP3 / M4B / EPUB</span>
+          <span class="chip">Offline library</span>
+          <span class="chip">Optional Lira Pro</span>
         </div>
         <div class="hero__actions">
-          <a class="btn btn--fill" href="support.html">View product</a>
-          <a class="btn btn--ghost" href="privacy.html">Privacy policy</a>
+          <a class="btn btn--fill" href="#pro">Lira Pro details</a>
+          <a class="btn btn--ghost" href="privacy.html">Privacy Policy</a>
+          <a class="btn btn--ghost" href="terms.html">Terms of Use</a>
         </div>
       </div>
 
-      <div class="phone-stage" aria-hidden="true">
-        <div class="phone phone--back">
-          <img src="assets/library.png" alt="">
-        </div>
+      <div class="hero-visual" aria-hidden="true">
+        <img class="hero-blob" src="assets/illu-hero.svg" alt="">
         <div class="phone phone--front">
-          <img src="assets/discover.png" alt="">
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="features">
-      <div class="shell">
-        <div class="section__head">
-          <div>
-            <p class="label">Features</p>
-            <h2 class="display">Built for your library</h2>
-          </div>
-          <p>A calm player for books you own — listen, read, and keep everything local.</p>
-        </div>
-
-        <div class="feature-tabs" role="tablist" aria-label="App features">
-          <button class="feature-item is-active" type="button" role="tab" aria-selected="true" id="tab-library" data-panel="panel-library">
-            <span class="feature-item__meta">
-              <span class="kicker">01</span>
-              <span class="kicker kicker--dim">Library</span>
-            </span>
-            <h3>Your shelves</h3>
-            <hr class="feature-item__rule" />
-            <p>Import files from Files and keep progress, bookmarks, and covers on device. No account required.</p>
-          </button>
-
-          <button class="feature-item" type="button" role="tab" aria-selected="false" id="tab-playback" data-panel="panel-playback">
-            <span class="feature-item__meta">
-              <span class="kicker">02</span>
-              <span class="kicker kicker--dim">Playback</span>
-            </span>
-            <h3>Listen your way</h3>
-            <hr class="feature-item__rule" />
-            <p>Speed, skip, sleep timer, and lock-screen controls — with the cover front and center.</p>
-          </button>
-
-          <button class="feature-item" type="button" role="tab" aria-selected="false" id="tab-reader" data-panel="panel-reader">
-            <span class="feature-item__meta">
-              <span class="kicker">03</span>
-              <span class="kicker kicker--dim">Reader</span>
-            </span>
-            <h3>EPUB + TTS</h3>
-            <hr class="feature-item__rule" />
-            <p>Day and night themes, font controls, and text-to-speech when you want the page spoken aloud.</p>
-          </button>
-
-          <button class="feature-item" type="button" role="tab" aria-selected="false" id="tab-transcripts" data-panel="panel-transcripts">
-            <span class="feature-item__meta">
-              <span class="kicker">04</span>
-              <span class="kicker kicker--dim">Transcripts</span>
-            </span>
-            <h3>Read along</h3>
-            <hr class="feature-item__rule" />
-            <p>Optional on-device transcription so you can follow the words while an audiobook plays.</p>
-          </button>
+          <img src="assets/library.png" alt="">
         </div>
       </div>
     </section>
@@ -122,42 +71,147 @@
       <div class="shell">
         <div class="section__head">
           <div>
-            <p class="label">How it works</p>
-            <h2 class="display">Three simple steps</h2>
+            <p class="label">Onboarding</p>
+            <h2 class="display">Three quiet steps</h2>
           </div>
-          <p>From empty shelves to a quiet listening session.</p>
+          <p>The same warm, illustrated path you see when you first open LIRA — from empty shelves to a listening session.</p>
         </div>
 
-        <div class="signal-grid" role="list">
-          <article class="signal-card is-active" role="listitem" tabindex="0">
-            <span class="signal-card__meta">
-              <span>01</span>
-              <span>Import</span>
-            </span>
-            <h3>Import or discover</h3>
-            <hr class="signal-card__rule" />
-            <p>Add your own files, or browse public-domain titles from LibriVox and Open Library.</p>
+        <div class="onboard-grid">
+          <article class="onboard-card">
+            <img src="assets/illu-import.svg" alt="">
+            <div class="onboard-card__body">
+              <p class="kicker">01 · Import</p>
+              <h3>Fill your shelves</h3>
+              <p>Add your own files, or browse public-domain titles from LibriVox, Gutenberg, and Open Library.</p>
+            </div>
           </article>
+          <article class="onboard-card">
+            <img src="assets/illu-listen.svg" alt="">
+            <div class="onboard-card__body">
+              <p class="kicker">02 · Listen</p>
+              <h3>Play it your way</h3>
+              <p>Speed, skip, sleep timer, and lock-screen controls — with the cover front and center.</p>
+            </div>
+          </article>
+          <article class="onboard-card">
+            <img src="assets/illu-follow.svg" alt="">
+            <div class="onboard-card__body">
+              <p class="kicker">03 · Follow</p>
+              <h3>Read along</h3>
+              <p>Optional on-device transcripts so the words can sit under the voice while you listen.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <article class="signal-card" role="listitem" tabindex="0">
-            <span class="signal-card__meta">
-              <span>02</span>
-              <span>Playback</span>
-            </span>
-            <h3>Listen or read</h3>
-            <hr class="signal-card__rule" />
-            <p>Use the player for audiobooks or the EPUB reader with themes, bookmarks, and spoken text.</p>
+    <section class="section section--paper" id="features">
+      <div class="shell">
+        <div class="section__head">
+          <div>
+            <p class="label">Features</p>
+            <h2 class="display">Built for books you own</h2>
+          </div>
+          <p>A calm player first. Account and Lira Pro stay optional.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <p class="kicker">Library</p>
+            <h3>Your shelves stay local</h3>
+            <p>Imported audiobooks, EPUBs, progress, bookmarks, and covers live on your device. No account is required to listen or read.</p>
           </article>
+          <article class="feature-card">
+            <p class="kicker">Playback</p>
+            <h3>A player that gets out of the way</h3>
+            <p>Sleep timer, speed, skip, and Now Playing on the Lock Screen — including a custom title if you want one.</p>
+          </article>
+          <article class="feature-card">
+            <p class="kicker">Reader</p>
+            <h3>EPUB with a bright theme</h3>
+            <p>Day and night themes, font controls, and text-to-speech when you want the page spoken aloud.</p>
+          </article>
+          <article class="feature-card">
+            <p class="kicker">Transcripts</p>
+            <h3>Words under the voice</h3>
+            <p>Generate read-along text on device. The first run may download a speech model over Wi‑Fi.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <article class="signal-card" role="listitem" tabindex="0">
-            <span class="signal-card__meta">
-              <span>03</span>
-              <span>Follow</span>
-            </span>
-            <h3>Follow along</h3>
-            <hr class="signal-card__rule" />
-            <p>Generate on-device transcripts when you want the words under the voice.</p>
+    <section class="section" id="pro">
+      <div class="shell">
+        <div class="section__head">
+          <div>
+            <p class="label">Lira Pro</p>
+            <h2 class="display">Monthly or yearly, billed by Apple</h2>
+          </div>
+          <p>Lira Pro is an optional auto-renewable subscription. Payment, renewal, and cancellation all go through your Apple ID.</p>
+        </div>
+        <img class="section-illu" src="assets/illu-pro.svg" alt="Illustrated listening disc with a gold star">
+
+        <div class="plan-grid">
+          <article class="plan-card">
+            <p class="label">Monthly</p>
+            <h3>Lira Pro Monthly</h3>
+            <p class="price">Monthly <span>/ billed every month</span></p>
+            <p>Auto-renewable App Store subscription. The price for your country or region is shown in the app and on the App Store before you confirm.</p>
+            <ul>
+              <li>Unlocks Lira Pro features listed in the purchase sheet</li>
+              <li>Renews each month until you cancel</li>
+              <li>Charged to the Apple ID used for purchase</li>
+            </ul>
           </article>
+          <article class="plan-card plan-card--yearly">
+            <span class="plan-badge">Best value</span>
+            <p class="label">Yearly</p>
+            <h3>Lira Pro Yearly</h3>
+            <p class="price">Yearly <span>/ billed every year</span></p>
+            <p>Same Lira Pro access, billed once a year. The current yearly price is shown in the app and on the App Store before you confirm.</p>
+            <ul>
+              <li>Unlocks Lira Pro features listed in the purchase sheet</li>
+              <li>Renews each year until you cancel</li>
+              <li>Charged to the Apple ID used for purchase</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="renew-note">
+          <p><strong>Auto-renewal.</strong> Payment is charged to your Apple ID at confirmation of purchase. The subscription renews automatically unless auto-renew is turned off at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours prior to the end of the current period.</p>
+          <p><strong>Cancel via Apple.</strong> Manage or cancel anytime on your iPhone: Settings → [your name] → Subscriptions → LIRA. You can also use Apple’s <a href="https://apps.apple.com/account/subscriptions">subscriptions page</a>. Canceling stops the next renewal; you keep Pro until the current period ends.</p>
+          <p>Full terms: <a href="terms.html">Terms of Use</a>. How we handle data: <a href="privacy.html">Privacy Policy</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper" id="account">
+      <div class="shell account-grid">
+        <img src="assets/illu-account.svg" alt="Illustrated profile avatar next to the Apple sign-in mark">
+        <div class="account-copy">
+          <p class="label">Optional account</p>
+          <h2 class="display">Sign in with Apple</h2>
+          <p>Create an optional LIRA profile with Sign in with Apple. Your display name and avatar are stored in Supabase so they can come back if you reinstall or switch devices. Your books, progress, and transcripts stay on the iPhone.</p>
+          <p>You can hide your email with Apple, change your avatar in Settings, or delete the account at any time. See the <a href="privacy.html">Privacy Policy</a> for what is stored and how to remove it.</p>
+          <div class="hero__actions">
+            <a class="btn btn--fill" href="privacy.html">Privacy Policy</a>
+            <a class="btn btn--ghost" href="support.html">Delete account help</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="legal-callout">
+          <div>
+            <h2 class="display">Privacy Policy &amp; Terms of Use</h2>
+            <p>These pages are the App Review links for LIRA: what data we keep, how Lira Pro renews, and how to cancel or delete an account.</p>
+          </div>
+          <div class="legal-callout__actions">
+            <a class="btn btn--coral" href="privacy.html">Privacy Policy</a>
+            <a class="btn btn--ghost" href="terms.html">Terms of Use</a>
+          </div>
         </div>
       </div>
     </section>
@@ -166,15 +220,15 @@
   <footer class="site-footer">
     <div class="shell">
       <p class="label">About</p>
-      <h2 class="display" style="font-size:clamp(3rem,8vw,5rem)">LIRA</h2>
+      <h2 class="display" style="font-size:clamp(2.4rem,7vw,4.2rem)">LIRA</h2>
       <div class="colophon-grid">
         <div>
           <h3>Product</h3>
           <p>LIRA Reader<br>Local audiobook + EPUB</p>
         </div>
         <div>
-          <h3>Typography</h3>
-          <p>Bebas Neue<br>IBM Plex Sans<br>IBM Plex Mono</p>
+          <h3>Lira Pro</h3>
+          <p><a href="#pro">Monthly &amp; yearly</a><br>Cancel via Apple</p>
         </div>
         <div>
           <h3>Contact</h3>
@@ -182,49 +236,19 @@
         </div>
         <div>
           <h3>Legal</h3>
-          <p><a href="privacy.html">Privacy</a><br><a href="terms.html">Terms</a><br><a href="sources.html">Sources</a></p>
+          <p><a href="privacy.html">Privacy Policy</a><br><a href="terms.html">Terms of Use</a><br><a href="sources.html">Sources</a></p>
         </div>
       </div>
       <div class="site-footer__bottom">
         <p>© <span id="y"></span> LIRA. All rights reserved.</p>
         <div class="footer-links">
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
           <a href="support.html">Support</a>
         </div>
       </div>
     </div>
   </footer>
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-
-    document.querySelectorAll(".feature-tabs").forEach((list) => {
-      const tabs = [...list.querySelectorAll('[role="tab"]')];
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          tabs.forEach((t) => {
-            t.classList.toggle("is-active", t === tab);
-            t.setAttribute("aria-selected", t === tab ? "true" : "false");
-          });
-        });
-      });
-    });
-
-    document.querySelectorAll(".signal-grid").forEach((grid) => {
-      const cards = [...grid.querySelectorAll(".signal-card")];
-      const activate = (card) => {
-        cards.forEach((c) => c.classList.toggle("is-active", c === card));
-      };
-      cards.forEach((card) => {
-        card.addEventListener("click", () => activate(card));
-        card.addEventListener("keydown", (e) => {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            activate(card);
-          }
-        });
-      });
-    });
-  </script>
+  <script src="js/site.js"></script>
 </body>
 </html>

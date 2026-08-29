@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none" role="img" aria-labelledby="t">
+  <title id="t">A profile avatar with Sign in with Apple</title>
+  <rect width="400" height="320" rx="36" fill="#F4EBE3"/>
+  <circle cx="168" cy="158" r="78" fill="#FDF8F5"/>
+  <circle cx="168" cy="136" r="28" fill="#D96A61"/>
+  <path d="M112 214c8-32 30-48 56-48s48 16 56 48" fill="#1A1A1A"/>
+  <rect x="236" y="118" width="88" height="88" rx="22" fill="#1A1A1A"/>
+  <path d="M284 142c0 4-3 10-8 10 5 0 8 6 8 10 0-4 4-6 8-10-4 0-8-6-8-10Zm-14 16c-10 16-4 36 8 36 5 0 8-2 12-2s8 2 12 2c6 0 14-8 18-20-12-6-16-18-10-28-8 2-14 4-20 4-6 0-12-2-20-2-4 0-8 2-8 10Z" fill="#FDF8F5"/>
+</svg>

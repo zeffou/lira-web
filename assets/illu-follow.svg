@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none" role="img" aria-labelledby="t">
+  <title id="t">An open page with highlighted lines and a waveform</title>
+  <rect width="400" height="320" rx="36" fill="#F4EBE3"/>
+  <rect x="86" y="52" width="228" height="216" rx="22" fill="#FDF8F5"/>
+  <rect x="86" y="52" width="228" height="36" rx="22" fill="#D96A61"/>
+  <rect x="86" y="70" width="228" height="18" fill="#D96A61"/>
+  <rect x="118" y="112" width="132" height="10" rx="5" fill="#E8D5C8"/>
+  <rect x="118" y="136" width="164" height="18" rx="9" fill="#F5C518"/>
+  <rect x="118" y="168" width="148" height="10" rx="5" fill="#E8D5C8"/>
+  <rect x="118" y="190" width="110" height="10" rx="5" fill="#E8D5C8"/>
+  <g transform="translate(118 226)" stroke="#D96A61" stroke-width="3.5" stroke-linecap="round">
+    <path d="M0 10v-8M12 14V2M24 16V0M36 12V4M48 18V-2M60 12V4M72 14V2M84 10V6"/>
+  </g>
+</svg>
