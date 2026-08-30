@@ -4,32 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sources &amp; Third Parties | LIRA</title>
-  <meta name="description" content="Third-party services and open sources used by LIRA.">
+  <meta name="description" content="Third-party services used by LIRA, including Apple, Supabase, WhisperKit, and public-domain catalogs.">
   <link rel="canonical" href="https://zeffou.github.io/lira-web/sources.html">
-  <meta name="theme-color" content="#050505">
+  <meta name="theme-color" content="#fefefc">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="shell site-header__inner">
-      <a class="logo" href="index.html"><span class="logo__mark"></span>LIRA</a>
+      <a class="logo" href="index.html">LIRA</a>
       <nav class="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
         <a href="support.html">Support</a>
+        <a href="sources.html" aria-current="page">Sources</a>
       </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="support.html">Support</a>
+      <a href="sources.html" aria-current="page">Sources</a>
+    </nav>
   </header>
 
   <main id="main" class="shell page">
-    <section class="panel">
-      <p class="label">Legal / Sources</p>
-      <h1 class="page-title">Sources</h1>
-      <p class="page-lead">External projects and services used by LIRA for Discovery and optional on-device transcription. Your imported personal library stays on device.</p>
-      <ul class="source-list">
+    <p class="eyebrow">Legal</p>
+    <h1 class="page-title">Sources</h1>
+    <p class="page-lead">External projects and services used by LIRA. Your imported personal library stays on device. Optional Sign in with Apple and Lira Pro use Apple and, for the profile only, Supabase.</p>
+    <ul class="source-list">
+        <li>
+          <strong>Sign in with Apple</strong>
+          <span>Optional account authentication. Apple may provide a user identifier, name, and email or Hide My Email relay.</span>
+        </li>
+        <li>
+          <strong>Supabase</strong>
+          <span>Optional profile storage: display name in the database and avatar images in Storage when you sign in and set a photo.</span>
+        </li>
+        <li>
+          <strong>App Store / StoreKit</strong>
+          <span>Lira Pro monthly and yearly auto-renewable subscriptions, billing, and cancellation.</span>
+        </li>
         <li>
           <strong>WhisperKit</strong>
           <span>On-device speech-to-text for optional audiobook transcripts.</span>
@@ -56,24 +80,22 @@
         </li>
         <li>
           <strong>Apple frameworks</strong>
-          <span>Playback, speech synthesis, lock-screen controls, and system pickers.</span>
+          <span>Playback, speech synthesis, lock-screen controls, system pickers, and Sign in with Apple.</span>
         </li>
       </ul>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="shell site-footer__bottom" style="border-top:0;padding-top:0">
       <p>© <span id="y"></span> LIRA</p>
       <div class="footer-links">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
         <a href="support.html">Support</a>
-        <a href="sources.html" aria-current="page">Sources</a>
-        <a href="https://zeffou.github.io/app-ads.txt">App ads.txt</a>
+        <a href="sources.html">Sources</a>
       </div>
     </div>
   </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="js/site.js"></script>
 </body>
 </html>

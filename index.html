@@ -3,174 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LIRA — Audiobook & EPUB Player</title>
+  <title>LIRA — Audiobook &amp; EPUB Player</title>
   <meta name="description" content="LIRA is a calm audiobook and ebook player for books you already own. Import MP3, M4B, and EPUB files. Listen offline with sleep timer, bookmarks, and on-device transcripts.">
   <link rel="canonical" href="https://zeffou.github.io/lira-web/">
-  <meta name="theme-color" content="#050505">
+  <meta name="theme-color" content="#fefefc">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-  <svg class="dot-pattern" aria-hidden="true">
-    <defs>
-      <pattern id="lira-dots" width="16" height="16" patternUnits="userSpaceOnUse" x="0" y="0">
-        <circle cx="1" cy="1" r="1" fill="currentColor" />
-      </pattern>
-    </defs>
-    <rect width="100%" height="100%" fill="url(#lira-dots)" />
-  </svg>
-
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="shell site-header__inner">
-      <a class="logo" href="index.html"><span class="logo__mark"></span>LIRA</a>
+      <a class="logo" href="index.html">LIRA</a>
       <nav class="site-nav" aria-label="Primary">
-        <a href="#features">Features</a>
         <a href="#how">How it works</a>
+        <a href="#features">Features</a>
         <a href="support.html">Support</a>
       </nav>
-      <a class="btn btn--fill header-cta" href="support.html">Get LIRA</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="support.html">Support</a>
+    </nav>
   </header>
 
   <main id="main">
-    <section class="shell hero">
-      <div class="hero__copy">
-        <p class="label">Listen · Read · Relax</p>
-        <h1 class="display">Your books.<br><span class="mark">On device.</span></h1>
-        <p class="hero__lead">Import the audiobooks and EPUBs you already own. Resume where you left off, speed up listening, and follow along with optional on-device transcripts.</p>
-        <div class="hero__meta">
-          <span>MP3 / M4B / EPUB</span>
-          <span>Offline library</span>
-          <span>On-device transcripts</span>
+    <section class="hero">
+      <div class="shell hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Audiobook &amp; EPUB player</p>
+          <h1>Your books, on your device.</h1>
+          <p class="lede">Import the audiobooks and EPUBs you already own. Resume where you left off, follow along with on-device transcripts, and keep your library on your iPhone.</p>
         </div>
-        <div class="hero__actions">
-          <a class="btn btn--fill" href="support.html">View product</a>
-          <a class="btn btn--ghost" href="privacy.html">Privacy policy</a>
-        </div>
-      </div>
-
-      <figure class="hero__device" aria-label="LIRA library screen on iPhone">
-        <div class="hero__phone">
-          <img src="assets/hero-library.jpg" alt="LIRA library with imported audiobooks and EPUBs">
-        </div>
-      </figure>
-    </section>
-
-    <section class="section" id="features">
-      <div class="shell">
-        <div class="section__head">
-          <div>
-            <p class="label">Features</p>
-            <h2 class="display">Built for your library</h2>
+        <figure class="hero__device" aria-label="LIRA library on iPhone">
+          <div class="hero__phone">
+            <img src="assets/hero-library.jpg" alt="LIRA library with imported audiobooks and EPUBs">
           </div>
-          <p>A calm player for books you own — listen, read, and keep everything local.</p>
-        </div>
-
-        <div class="feature-tabs" role="tablist" aria-label="App features">
-          <button class="feature-item is-active" type="button" role="tab" aria-selected="true" id="tab-library" data-panel="panel-library">
-            <span class="feature-item__meta">
-              <span class="kicker">01</span>
-              <span class="kicker kicker--dim">Library</span>
-            </span>
-            <h3>Your shelves</h3>
-            <hr class="feature-item__rule" />
-            <p>Import files from Files and keep progress, bookmarks, and covers on device. No account required.</p>
-          </button>
-
-          <button class="feature-item" type="button" role="tab" aria-selected="false" id="tab-playback" data-panel="panel-playback">
-            <span class="feature-item__meta">
-              <span class="kicker">02</span>
-              <span class="kicker kicker--dim">Playback</span>
-            </span>
-            <h3>Listen your way</h3>
-            <hr class="feature-item__rule" />
-            <p>Speed, skip, sleep timer, and lock-screen controls — with the cover front and center.</p>
-          </button>
-
-          <button class="feature-item" type="button" role="tab" aria-selected="false" id="tab-reader" data-panel="panel-reader">
-            <span class="feature-item__meta">
-              <span class="kicker">03</span>
-              <span class="kicker kicker--dim">Reader</span>
-            </span>
-            <h3>EPUB + TTS</h3>
-            <hr class="feature-item__rule" />
-            <p>Day and night themes, font controls, and text-to-speech when you want the page spoken aloud.</p>
-          </button>
-
-          <button class="feature-item" type="button" role="tab" aria-selected="false" id="tab-transcripts" data-panel="panel-transcripts">
-            <span class="feature-item__meta">
-              <span class="kicker">04</span>
-              <span class="kicker kicker--dim">Transcripts</span>
-            </span>
-            <h3>Read along</h3>
-            <hr class="feature-item__rule" />
-            <p>Optional on-device transcription so you can follow the words while an audiobook plays.</p>
-          </button>
-        </div>
+        </figure>
       </div>
     </section>
 
     <section class="section" id="how">
       <div class="shell">
         <div class="section__head">
-          <div>
-            <p class="label">How it works</p>
-            <h2 class="display">Three simple steps</h2>
-          </div>
-          <p>From empty shelves to a quiet listening session.</p>
+          <p class="eyebrow">How it works</p>
+          <h2>Three quiet steps.</h2>
+          <p>From empty shelves to a listening session.</p>
         </div>
-
-        <div class="signal-grid" role="list">
-          <article class="signal-card is-active" role="listitem" tabindex="0">
-            <span class="signal-card__meta">
-              <span>01</span>
-              <span>Import</span>
-            </span>
-            <h3>Import or discover</h3>
-            <hr class="signal-card__rule" />
-            <p>Add your own files, or browse public-domain titles from LibriVox and Open Library.</p>
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <h3>Import</h3>
+            <p>Add your own files, or browse public-domain titles from LibriVox, Gutenberg, and Open Library.</p>
           </article>
-
-          <article class="signal-card" role="listitem" tabindex="0">
-            <span class="signal-card__meta">
-              <span>02</span>
-              <span>Playback</span>
-            </span>
-            <h3>Listen or read</h3>
-            <hr class="signal-card__rule" />
-            <p>Use the player for audiobooks or the EPUB reader with themes, bookmarks, and spoken text.</p>
+          <article>
+            <span>02</span>
+            <h3>Listen</h3>
+            <p>Speed, skip, sleep timer, and lock-screen controls — with the cover front and center.</p>
           </article>
-
-          <article class="signal-card" role="listitem" tabindex="0">
-            <span class="signal-card__meta">
-              <span>03</span>
-              <span>Follow</span>
-            </span>
+          <article>
+            <span>03</span>
             <h3>Follow along</h3>
-            <hr class="signal-card__rule" />
-            <p>Generate on-device transcripts when you want the words under the voice.</p>
+            <p>Optional on-device transcripts so the words can sit under the voice while you listen.</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="shell">
+        <div class="section__head">
+          <p class="eyebrow">Features</p>
+          <h2>Built for books you own.</h2>
+          <p>A calm player — listen, read, and keep everything local.</p>
+        </div>
+        <div class="feature-list">
+          <article>
+            <h3>Library</h3>
+            <p>Imported audiobooks, EPUBs, progress, bookmarks, and covers live on your device.</p>
+          </article>
+          <article>
+            <h3>Playback</h3>
+            <p>Sleep timer, speed, skip, and Now Playing on the Lock Screen — including a custom title if you want one.</p>
+          </article>
+          <article>
+            <h3>Reader</h3>
+            <p>Day and night themes, font controls, and text-to-speech when you want the page spoken aloud.</p>
+          </article>
+          <article>
+            <h3>Transcripts</h3>
+            <p>Generate read-along text on device. The first run may download a speech model over Wi‑Fi.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sage" id="account">
+      <div class="shell">
+        <div class="account-copy">
+          <p class="eyebrow">Optional account</p>
+          <h2>Sign in with Apple.</h2>
+          <p>Create an optional LIRA profile with Sign in with Apple. Your display name and avatar are stored in Supabase so they can come back if you reinstall or switch devices. Your books, progress, and transcripts stay on the iPhone.</p>
+          <p>You can hide your email with Apple, change your avatar in Settings, or delete the account at any time. See the <a href="privacy.html">Privacy Policy</a> for what is stored and how to remove it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <p class="eyebrow">Legal</p>
+        <h2 class="display" style="font-size:clamp(2.25rem,5vw,3.25rem);margin-bottom:1.5rem">Privacy Policy &amp; Terms of Use.</h2>
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pro">
+      <div class="shell">
+        <p class="note">LIRA may offer an optional Lira Pro subscription through the App Store (monthly or yearly, auto-renewing). Prices are shown before you confirm. Cancel anytime in iOS Settings → [your name] → Subscriptions, or on <a href="https://apps.apple.com/account/subscriptions">Apple’s subscriptions page</a>. Details are in the <a href="terms.html">Terms of Use</a>.</p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="shell">
-      <p class="label">About</p>
-      <h2 class="display" style="font-size:clamp(3rem,8vw,5rem)">LIRA</h2>
       <div class="colophon-grid">
         <div>
           <h3>Product</h3>
           <p>LIRA Reader<br>Local audiobook + EPUB</p>
         </div>
         <div>
-          <h3>Typography</h3>
-          <p>Bebas Neue<br>IBM Plex Sans<br>IBM Plex Mono</p>
+          <h3>App</h3>
+          <p><a href="#features">Features</a><br><a href="#how">How it works</a></p>
         </div>
         <div>
           <h3>Contact</h3>
@@ -178,50 +151,20 @@
         </div>
         <div>
           <h3>Legal</h3>
-          <p><a href="privacy.html">Privacy</a><br><a href="terms.html">Terms</a><br><a href="sources.html">Sources</a><br><a href="https://zeffou.github.io/app-ads.txt">App ads.txt</a></p>
+          <p><a href="privacy.html">Privacy Policy</a><br><a href="terms.html">Terms of Use</a><br><a href="sources.html">Sources</a><br><a href="app-ads.txt">App ads.txt</a></p>
         </div>
       </div>
       <div class="site-footer__bottom">
         <p>© <span id="y"></span> LIRA. All rights reserved.</p>
         <div class="footer-links">
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
           <a href="support.html">Support</a>
-          <a href="https://zeffou.github.io/app-ads.txt">App ads.txt</a>
+          <a href="app-ads.txt">App ads.txt</a>
         </div>
       </div>
     </div>
   </footer>
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-
-    document.querySelectorAll(".feature-tabs").forEach((list) => {
-      const tabs = [...list.querySelectorAll('[role="tab"]')];
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          tabs.forEach((t) => {
-            t.classList.toggle("is-active", t === tab);
-            t.setAttribute("aria-selected", t === tab ? "true" : "false");
-          });
-        });
-      });
-    });
-
-    document.querySelectorAll(".signal-grid").forEach((grid) => {
-      const cards = [...grid.querySelectorAll(".signal-card")];
-      const activate = (card) => {
-        cards.forEach((c) => c.classList.toggle("is-active", c === card));
-      };
-      cards.forEach((card) => {
-        card.addEventListener("click", () => activate(card));
-        card.addEventListener("keydown", (e) => {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            activate(card);
-          }
-        });
-      });
-    });
-  </script>
+  <script src="js/site.js"></script>
 </body>
 </html>

@@ -4,55 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support | LIRA</title>
-  <meta name="description" content="Get help with LIRA: import issues, playback, transcripts, privacy, and contact support.">
+  <meta name="description" content="Get help with LIRA: Lira Pro subscriptions, canceling through Apple, Sign in with Apple, deleting your account, import, and transcripts.">
   <link rel="canonical" href="https://zeffou.github.io/lira-web/support.html">
-  <meta name="theme-color" content="#050505">
+  <meta name="theme-color" content="#fefefc">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="shell site-header__inner">
-      <a class="logo" href="index.html"><span class="logo__mark"></span>LIRA</a>
+      <a class="logo" href="index.html">LIRA</a>
       <nav class="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
         <a href="support.html" aria-current="page">Support</a>
+        <a href="sources.html">Sources</a>
       </nav>
+      <a class="btn header-cta" href="mailto:tumba.miller@gmail.com">Email</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="sources.html">Sources</a>
+    </nav>
   </header>
 
   <main id="main" class="shell page">
-    <section class="panel">
-      <p class="label">Support / Contact</p>
-      <h1 class="page-title">Support</h1>
-      <p class="page-lead">Need help with LIRA? Start with the questions below, or email us directly.</p>
-      <div class="hero__actions" style="margin-top:0">
-        <a class="btn btn--fill" href="mailto:tumba.miller@gmail.com">Email support</a>
-        <a class="btn btn--ghost" href="privacy.html">Privacy policy</a>
-      </div>
-    </section>
+    <p class="eyebrow">Support</p>
+    <h1 class="page-title">Support</h1>
+    <p class="page-lead">Need help with LIRA? Start with the questions below, or email us directly.</p>
+    <div class="actions" style="margin-top:1.5rem">
+      <a class="btn" href="mailto:tumba.miller@gmail.com">Email support</a>
+      <a class="btn btn--ghost" href="privacy.html">Privacy Policy</a>
+    </div>
 
-    <section class="panel faq" style="margin-top:1rem" aria-label="FAQ">
-      <p class="label">FAQ</p>
-      <h2 class="page-title" style="font-size:clamp(2.2rem,6vw,3.2rem)">Common questions</h2>
+    <section class="faq" style="margin-top:3rem" aria-label="FAQ">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="page-title" style="font-size:clamp(2rem,4vw,2.6rem);margin-bottom:1.25rem">Common questions</h2>
       <details open>
+        <summary>What is Lira Pro?</summary>
+        <p>Lira Pro is an optional auto-renewable subscription sold through the App Store as monthly or yearly plans. The price for your region is shown in the app before you confirm. Cancel through Apple: Settings → [your name] → Subscriptions. See the <a href="terms.html">Terms of Use</a>.</p>
+      </details>
+      <details>
+        <summary>How do I cancel Lira Pro?</summary>
+        <p>Cancel through Apple: Settings → [your name] → Subscriptions → LIRA. You can also use <a href="https://apps.apple.com/account/subscriptions">Apple’s subscriptions page</a>. Canceling stops the next renewal; you keep Pro until the current period ends. Uninstalling the app does not cancel the subscription.</p>
+      </details>
+      <details>
+        <summary>How does Sign in with Apple work?</summary>
+        <p>It is optional. Apple signs you in; LIRA stores a display name and avatar in Supabase so the profile can return after a reinstall. Your books stay on the device. You can hide your email with Apple.</p>
+      </details>
+      <details>
+        <summary>How do I change or remove my avatar?</summary>
+        <p>Open Settings in LIRA and edit your profile photo, or remove it. Avatars are stored in Supabase Storage only if you signed in and chose one.</p>
+      </details>
+      <details>
+        <summary>How do I delete my account and data?</summary>
+        <p>Delete books from your library, clear custom Lock Screen details if you set any, and clear transcripts when available. If you signed in, use Settings → Account → Delete account to remove the Supabase profile and avatar. You can also email tumba.miller@gmail.com. Uninstall LIRA to remove remaining on-device app data. Cancel Lira Pro separately through Apple if you subscribed.</p>
+      </details>
+      <details>
         <summary>Which formats can I import?</summary>
         <p>Audiobooks: MP3, M4A, M4B, AAC, WAV, CAF. Ebooks: EPUB. MOBI/AZW/PDF are not supported yet.</p>
       </details>
       <details>
         <summary>Where are my books stored?</summary>
-        <p>On your iPhone, inside LIRA’s local library. There is no required LIRA cloud account.</p>
+        <p>On your iPhone, inside LIRA’s local library. Sign in with Apple does not upload your books.</p>
       </details>
       <details>
         <summary>Why does transcription download a large file?</summary>
         <p>Optional read-along transcription uses an on-device speech model. The first run may download about 500 MB over Wi‑Fi.</p>
-      </details>
-      <details>
-        <summary>How do I delete my data?</summary>
-        <p>Delete books from your library, clear custom Lock Screen Now Playing details in Settings if you set any, clear transcripts when available, and/or uninstall the app.</p>
       </details>
       <details>
         <summary>How do I report a bug?</summary>
@@ -65,14 +93,13 @@
     <div class="shell site-footer__bottom" style="border-top:0;padding-top:0">
       <p>© <span id="y"></span> LIRA</p>
       <div class="footer-links">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
         <a href="support.html">Support</a>
         <a href="sources.html">Sources</a>
-        <a href="https://zeffou.github.io/app-ads.txt">App ads.txt</a>
       </div>
     </div>
   </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="js/site.js"></script>
 </body>
 </html>

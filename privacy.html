@@ -4,60 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy | LIRA</title>
-  <meta name="description" content="Privacy Policy for LIRA. Learn what data stays on your device, when network is used, and how to delete your information.">
+  <meta name="description" content="Privacy Policy for LIRA, including on-device library data, optional Sign in with Apple, profile and avatar storage in Supabase, and Lira Pro.">
   <link rel="canonical" href="https://zeffou.github.io/lira-web/privacy.html">
-  <meta name="theme-color" content="#050505">
+  <meta name="theme-color" content="#fefefc">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="shell site-header__inner">
-      <a class="logo" href="index.html"><span class="logo__mark"></span>LIRA</a>
+      <a class="logo" href="index.html">LIRA</a>
       <nav class="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
         <a href="support.html">Support</a>
+        <a href="sources.html">Sources</a>
       </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="privacy.html" aria-current="page">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="support.html">Support</a>
+      <a href="sources.html">Sources</a>
+    </nav>
   </header>
 
   <main id="main" class="shell page">
-    <article class="panel prose">
-      <p class="label">Legal / Privacy</p>
-      <h1 class="page-title">Privacy Policy</h1>
-      <p class="meta">Last updated: August 10, 2026</p>
-      <p class="page-lead">LIRA is built to keep your listening library on your device. This policy explains what information is handled, when the app uses the network, and how you can remove data.</p>
+    <p class="eyebrow">Legal</p>
+    <h1 class="page-title">Privacy Policy</h1>
+    <p class="meta">Last updated: August 29, 2026</p>
+    <p class="page-lead">LIRA keeps your listening library on your device. An account is optional. This policy explains what stays local, what Sign in with Apple and Supabase store if you create a profile, and how Lira Pro purchases are handled by Apple.</p>
 
+    <article class="prose">
       <h2>Who we are</h2>
       <p>LIRA is published by Zeffou / Tumba Mulamba. For privacy questions, contact <a href="mailto:tumba.miller@gmail.com">tumba.miller@gmail.com</a>.</p>
 
       <h2>Summary</h2>
       <ul>
-        <li>No account is required.</li>
-        <li>Imported books, bookmarks, progress, covers, and preferences are stored on your device.</li>
-        <li>We do not sell personal data.</li>
-        <li>Network is used for Discovery catalogs and, if you choose, downloading an on-device speech transcription model.</li>
+        <li>No account is required to import books, listen, or read.</li>
+        <li>Imported books, bookmarks, progress, covers, transcripts, and preferences stay on your device.</li>
+        <li>If you choose Sign in with Apple, we store a profile (display name and avatar) in Supabase.</li>
+        <li>Lira Pro is billed by Apple. We do not receive your full payment card details.</li>
+        <li>We do not sell personal data and do not use third-party advertising or App Tracking Transparency tracking.</li>
       </ul>
 
       <h2>Data stored on your device</h2>
       <p>Depending on how you use LIRA, the app may store:</p>
       <ul>
-        <li><strong>Library media</strong> — audiobooks and EPUB files you import or download from Discovery, plus cover art (extracted or chosen by you).</li>
-        <li><strong>Listening state</strong> — resume position, playback preferences, bookmarks, sleep-timer settings, and appearance choices (such as dark mode or app icon).</li>
+        <li><strong>Library media</strong> — audiobooks and EPUB files you import or download from Discovery, plus cover art.</li>
+        <li><strong>Listening state</strong> — resume position, playback preferences, bookmarks, sleep-timer settings, and appearance choices (such as the bright or dark theme, or app icon).</li>
         <li><strong>Optional Lock Screen identity</strong> — if you choose Custom Now Playing details, a custom title, artist name, and optional cover image stored only on device.</li>
         <li><strong>Transcripts</strong> — text generated on device when you start transcription for a book.</li>
         <li><strong>Model cache</strong> — if you start transcription, LIRA may download a speech-to-text model for on-device use (often around 500&nbsp;MB the first time).</li>
       </ul>
 
+      <h2>Optional Sign in with Apple and profile storage</h2>
+      <p>You can use LIRA without signing in. If you choose <strong>Sign in with Apple</strong>, Apple authenticates you and may share with us:</p>
+      <ul>
+        <li>A unique Apple user identifier</li>
+        <li>Your name, if you choose to share it</li>
+        <li>An email address, or an Apple Hide My Email relay address</li>
+      </ul>
+      <p>We use that information to create an optional LIRA profile. Profile data is stored with <strong>Supabase</strong> (database and file storage), which acts as our processor:</p>
+      <ul>
+        <li><strong>Display name</strong> — shown in the app if you set one.</li>
+        <li><strong>Avatar image</strong> — if you pick a photo, it is uploaded to Supabase Storage and linked to your profile.</li>
+        <li><strong>Account identifiers</strong> — needed to sign you back in and to delete the account when you ask.</li>
+      </ul>
+      <p>Your imported library, listening progress, bookmarks, and transcripts are <strong>not</strong> uploaded to Supabase as part of this profile. Sign in with Apple is used so you can restore the profile, not to host your books.</p>
+      <p>You can use Hide My Email in Apple’s sign-in sheet. You can change your display name or avatar in LIRA Settings. To remove the cloud profile, use <strong>Delete account</strong> in Settings, or email us from the address associated with the account.</p>
+
+      <h2>Lira Pro purchases</h2>
+      <p>If you subscribe to Lira Pro, payment is processed by Apple. Apple may share a subscription status, original transaction identifier, and similar App Store receipt data with the app so we can unlock Pro features. We do not store your Apple ID password or full payment card number. Manage or cancel in iOS Settings → [your name] → Subscriptions. See the <a href="terms.html">Terms of Use</a> for auto-renewal details.</p>
+
       <h2>Network use</h2>
-      <p>LIRA may connect to the internet to load Discovery catalogs from LibriVox, Project Gutenberg (via Gutendex), Open Library, and the Internet Archive, and to download a Whisper speech model the first time you start transcription. Imported personal library files are not uploaded to our servers.</p>
+      <p>LIRA may connect to the internet to:</p>
+      <ul>
+        <li>Load Discovery catalogs from LibriVox, Project Gutenberg (via Gutendex), Open Library, and the Internet Archive.</li>
+        <li>Download a Whisper speech model the first time you start transcription.</li>
+        <li>If you sign in, contact Apple (Sign in with Apple) and Supabase (profile and avatar).</li>
+        <li>If you subscribe, contact Apple to validate Lira Pro.</li>
+      </ul>
+      <p>Imported personal library files are not uploaded to our servers.</p>
 
       <h2>Permissions</h2>
       <ul>
-        <li><strong>Photos</strong> — only if you pick a custom book cover or a custom Lock Screen Now Playing image through the system photo picker.</li>
+        <li><strong>Photos</strong> — only if you pick a custom book cover, a Lock Screen Now Playing image, or a profile avatar through the system photo picker.</li>
         <li><strong>Notifications</strong> — only if you use a sleep timer that schedules a warning notification.</li>
         <li><strong>Background audio</strong> — so playback can continue with the screen locked.</li>
       </ul>
@@ -66,18 +106,19 @@
       <p>LIRA does not include third-party advertising SDKs and does not use App Tracking Transparency tracking.</p>
 
       <h2>Children</h2>
-      <p>LIRA is a general-audience reading and listening app. It is not directed at children under 13.</p>
+      <p>LIRA is a general-audience reading and listening app. It is not directed at children under 13, and we do not knowingly collect personal information from children via an account.</p>
 
       <h2>Data retention and deletion</h2>
       <ul>
         <li>Delete individual books from your library.</li>
         <li>Clear custom Lock Screen Now Playing details and cover in Settings.</li>
         <li>Clear generated transcripts from the player when available.</li>
-        <li>Uninstall LIRA to remove remaining app data from the device.</li>
+        <li>If you signed in: Settings → Account → Delete account removes the Supabase profile, avatar, and Sign in with Apple association we store. You can also email <a href="mailto:tumba.miller@gmail.com">tumba.miller@gmail.com</a>. We process requests within a few business days.</li>
+        <li>Uninstall LIRA to remove remaining app data from the device. Apple keeps subscription records according to Apple’s policies.</li>
       </ul>
 
       <h2>Third parties</h2>
-      <p>See <a href="sources.html">Sources &amp; Third Parties</a>.</p>
+      <p>Processors and catalogs we rely on are listed on <a href="sources.html">Sources &amp; Third Parties</a>. Supabase may process profile data outside your country; we use them only to provide the optional account you requested.</p>
 
       <h2>Contact</h2>
       <p>Email <a href="mailto:tumba.miller@gmail.com">tumba.miller@gmail.com</a>.</p>
@@ -88,14 +129,13 @@
     <div class="shell site-footer__bottom" style="border-top:0;padding-top:0">
       <p>© <span id="y"></span> LIRA</p>
       <div class="footer-links">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
         <a href="support.html">Support</a>
         <a href="sources.html">Sources</a>
-        <a href="https://zeffou.github.io/app-ads.txt">App ads.txt</a>
       </div>
     </div>
   </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="js/site.js"></script>
 </body>
 </html>
