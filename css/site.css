@@ -233,31 +233,32 @@ h2,
 }
 
 .hero__grid {
-  display: grid;
-  gap: 2rem;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
-@media (min-width: 860px) {
-  .hero__grid {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: clamp(1.5rem, 4vw, 3rem);
-    align-items: center;
-  }
+.hero__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: start;
 }
 
 .hero__copy {
   max-width: 36rem;
+  min-width: 0;
 }
 
 .hero h1 {
-  font-size: clamp(3rem, 8vw, 5.25rem);
+  font-size: clamp(2.35rem, 7.5vw, 4.75rem);
   max-width: 11ch;
+  margin: 0;
 }
 
 .hero .lede {
-  margin: 1.25rem 0 0;
-  max-width: 34rem;
+  margin: 0;
+  max-width: 40rem;
   color: var(--smoke);
   font-size: 16px;
   line-height: 1.55;
@@ -265,24 +266,29 @@ h2,
 
 .hero__device {
   margin: 0;
-  justify-self: center;
-  width: min(52vw, 11.5rem);
+  width: clamp(8.5rem, 30vw, 12.5rem);
+  flex-shrink: 0;
 }
 
-@media (min-width: 860px) {
-  .hero__device {
-    justify-self: end;
-    width: 13.5rem;
-    margin-top: 0.35rem;
-  }
+.hero__panel {
+  background: var(--slate);
+  border-radius: 8px;
+  aspect-ratio: 1;
+  display: grid;
+  align-items: end;
+  justify-items: center;
+  padding: clamp(0.85rem, 3vw, 1.35rem);
+  padding-bottom: 0;
+  overflow: hidden;
 }
 
 .hero__phone {
-  border: 1px solid rgba(10, 10, 10, 0.1);
+  width: 68%;
+  border: 1px solid rgba(10, 10, 10, 0.08);
   background: #000;
   overflow: hidden;
-  border-radius: 1.15rem;
-  box-shadow: 0 16px 40px rgba(10, 10, 10, 0.1);
+  border-radius: 8px 8px 0 0;
+  box-shadow: none;
 }
 
 .hero__phone img {
@@ -294,14 +300,18 @@ h2,
   background: #f5f6f7;
 }
 
-@media (max-width: 859px) {
-  .hero__grid {
-    gap: 1.75rem;
+@media (min-width: 900px) {
+  .hero__device {
+    width: 13rem;
+    margin-top: 0.15rem;
   }
 
-  .hero__device {
-    justify-self: start;
-    width: min(46vw, 10.5rem);
+  .hero__panel {
+    padding: 1.35rem 1.35rem 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 5vw, 5rem);
   }
 }
 
