@@ -6,18 +6,18 @@
   <title>LIRA — Audiobook &amp; EPUB Player</title>
   <meta name="description" content="LIRA is a calm audiobook and ebook player for books you already own. Import MP3, M4B, and EPUB files. Listen offline with sleep timer, bookmarks, and on-device transcripts.">
   <link rel="canonical" href="https://zeffou.github.io/lira-web/">
-  <meta name="theme-color" content="#fdf8f5">
+  <meta name="theme-color" content="#fefefc">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="site-header__inner">
-      <a class="logo" href="index.html"><span class="logo__mark"></span>LIRA</a>
+    <div class="shell site-header__inner">
+      <a class="logo" href="index.html">LIRA</a>
       <nav class="site-nav" aria-label="Primary">
         <a href="#how">How it works</a>
         <a href="#features">Features</a>
@@ -39,22 +39,13 @@
   </header>
 
   <main id="main">
-    <section class="shell hero">
-      <div>
-        <p class="label">Listen · Read · Relax</p>
-        <h1 class="display">What will you <span class="mark">listen</span> today?</h1>
-        <p class="hero__lead">Import the audiobooks and EPUBs you already own. Resume where you left off, follow along with on-device transcripts, and keep your library on your iPhone.</p>
-        <div class="hero__meta">
-          <span class="chip">MP3 / M4B / EPUB</span>
-          <span class="chip">Offline library</span>
-          <span class="chip">On-device transcripts</span>
-        </div>
-      </div>
-
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-blob"></div>
-        <div class="phone phone--front">
-          <img src="assets/library.png" alt="">
+    <section class="hero">
+      <div class="shell">
+        <p class="eyebrow">Audiobook &amp; EPUB player</p>
+        <h1>Your books, on your device.</h1>
+        <p class="lede">Import the audiobooks and EPUBs you already own. Resume where you left off, follow along with on-device transcripts, and keep your library on your iPhone.</p>
+        <div class="hero-panel">
+          <img src="assets/library.png" alt="LIRA library on iPhone">
         </div>
       </div>
     </section>
@@ -62,82 +53,63 @@
     <section class="section" id="how">
       <div class="shell">
         <div class="section__head">
-          <div>
-            <p class="label">Onboarding</p>
-            <h2 class="display">Three quiet steps</h2>
-          </div>
-          <p>The same warm, illustrated path you see when you first open LIRA — from empty shelves to a listening session.</p>
+          <p class="eyebrow">How it works</p>
+          <h2>Three quiet steps.</h2>
+          <p>From empty shelves to a listening session.</p>
         </div>
-
-        <div class="onboard-grid">
-          <article class="onboard-card">
-            <img src="assets/illu-import.svg" alt="">
-            <div class="onboard-card__body">
-              <p class="kicker">01 · Import</p>
-              <h3>Fill your shelves</h3>
-              <p>Add your own files, or browse public-domain titles from LibriVox, Gutenberg, and Open Library.</p>
-            </div>
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <h3>Import</h3>
+            <p>Add your own files, or browse public-domain titles from LibriVox, Gutenberg, and Open Library.</p>
           </article>
-          <article class="onboard-card">
-            <img src="assets/illu-listen.svg" alt="">
-            <div class="onboard-card__body">
-              <p class="kicker">02 · Listen</p>
-              <h3>Play it your way</h3>
-              <p>Speed, skip, sleep timer, and lock-screen controls — with the cover front and center.</p>
-            </div>
+          <article>
+            <span>02</span>
+            <h3>Listen</h3>
+            <p>Speed, skip, sleep timer, and lock-screen controls — with the cover front and center.</p>
           </article>
-          <article class="onboard-card">
-            <img src="assets/illu-follow.svg" alt="">
-            <div class="onboard-card__body">
-              <p class="kicker">03 · Follow</p>
-              <h3>Read along</h3>
-              <p>Optional on-device transcripts so the words can sit under the voice while you listen.</p>
-            </div>
+          <article>
+            <span>03</span>
+            <h3>Follow along</h3>
+            <p>Optional on-device transcripts so the words can sit under the voice while you listen.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--paper" id="features">
+    <section class="section" id="features">
       <div class="shell">
         <div class="section__head">
-          <div>
-            <p class="label">Features</p>
-            <h2 class="display">Built for books you own</h2>
-          </div>
-          <p>A calm player for books you own — listen, read, and keep everything local.</p>
+          <p class="eyebrow">Features</p>
+          <h2>Built for books you own.</h2>
+          <p>A calm player — listen, read, and keep everything local.</p>
         </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <p class="kicker">Library</p>
-            <h3>Your shelves stay local</h3>
+        <div class="feature-list">
+          <article>
+            <h3>Library</h3>
             <p>Imported audiobooks, EPUBs, progress, bookmarks, and covers live on your device.</p>
           </article>
-          <article class="feature-card">
-            <p class="kicker">Playback</p>
-            <h3>A player that gets out of the way</h3>
+          <article>
+            <h3>Playback</h3>
             <p>Sleep timer, speed, skip, and Now Playing on the Lock Screen — including a custom title if you want one.</p>
           </article>
-          <article class="feature-card">
-            <p class="kicker">Reader</p>
-            <h3>EPUB with a bright theme</h3>
+          <article>
+            <h3>Reader</h3>
             <p>Day and night themes, font controls, and text-to-speech when you want the page spoken aloud.</p>
           </article>
-          <article class="feature-card">
-            <p class="kicker">Transcripts</p>
-            <h3>Words under the voice</h3>
+          <article>
+            <h3>Transcripts</h3>
             <p>Generate read-along text on device. The first run may download a speech model over Wi‑Fi.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--paper" id="account">
-      <div class="shell account-grid">
-        <img src="assets/illu-account.svg" alt="Illustrated profile avatar next to the Apple sign-in mark">
+    <section class="section section--sage" id="account">
+      <div class="shell">
         <div class="account-copy">
-          <p class="label">Optional account</p>
-          <h2 class="display">Sign in with Apple</h2>
+          <p class="eyebrow">Optional account</p>
+          <h2>Sign in with Apple.</h2>
           <p>Create an optional LIRA profile with Sign in with Apple. Your display name and avatar are stored in Supabase so they can come back if you reinstall or switch devices. Your books, progress, and transcripts stay on the iPhone.</p>
           <p>You can hide your email with Apple, change your avatar in Settings, or delete the account at any time. See the <a href="privacy.html">Privacy Policy</a> for what is stored and how to remove it.</p>
         </div>
@@ -146,20 +118,16 @@
 
     <section class="section">
       <div class="shell">
-        <div class="legal-callout">
-          <div>
-            <h2 class="display">Privacy Policy &amp; Terms of Use</h2>
-            <p>What data we keep, and how to delete an account.</p>
-          </div>
-          <div class="legal-callout__actions">
-            <a class="btn btn--coral" href="privacy.html">Privacy Policy</a>
-            <a class="btn btn--ghost" href="terms.html">Terms of Use</a>
-          </div>
+        <p class="eyebrow">Legal</p>
+        <h2 class="display" style="font-size:clamp(2.25rem,5vw,3.25rem);margin-bottom:1.5rem">Privacy Policy &amp; Terms of Use.</h2>
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
         </div>
       </div>
     </section>
 
-    <section class="section section--quiet" id="pro">
+    <section class="section" id="pro">
       <div class="shell">
         <p class="note">LIRA may offer an optional Lira Pro subscription through the App Store (monthly or yearly, auto-renewing). Prices are shown before you confirm. Cancel anytime in iOS Settings → [your name] → Subscriptions, or on <a href="https://apps.apple.com/account/subscriptions">Apple’s subscriptions page</a>. Details are in the <a href="terms.html">Terms of Use</a>.</p>
       </div>
@@ -168,8 +136,6 @@
 
   <footer class="site-footer">
     <div class="shell">
-      <p class="label">About</p>
-      <h2 class="display" style="font-size:clamp(2.4rem,7vw,4.2rem)">LIRA</h2>
       <div class="colophon-grid">
         <div>
           <h3>Product</h3>
